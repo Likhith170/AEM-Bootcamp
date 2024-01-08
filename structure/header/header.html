@@ -1,0 +1,35 @@
+<sly data-sly-use.header="com.mysite.core.models.HeaderModel" data-sly-test.empty="${!header.fileReference}"
+     data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+     data-sly-call="${template.placeholder @ isEmpty=empty}"/>
+<sly data-sly-test="${!empty}">
+    <div class="container responsivegrid" >
+        <div class="container responsivegrid cmp-layoutcontainer--header">
+            <div class="cmp-container">
+                <div class="aem-Grid">
+                    <div class="navigation cmp-navigation--header" style="text-align: right; margin-top: 20px; margin-right: 50px;">
+                        <nav class="cmp-navigation">
+                            <sly data-sly-repeat.nav="${header.headerNavigationItemsList}">
+                                <a href="${nav.path @extension='html'}" data-cmp-clickable="" class="cmp-navigation__item-link" style="color: black; text-decoration: none; margin-right: 20px; display: inline-block; padding: 10px; transition: background-color 0.3s; font-weight: bold;">
+                                    ${nav.title}
+                                </a>
+                            </sly>
+                        </nav>
+                    </div>
+                    <div class="cmp-image--logo aem-GridColumn" style="display: inline-block; width: 300px; margin-left: auto;">
+                        <div class="cmp-image" href="${header.logoLink @extension='html'}">
+                            &nbsp;&nbsp;<img src="${header.fileReference}" alt="${header.altText}" loading="lazy" style="margin-top: -25px; height: 85px;"
+                                 class="cmp-image__image" itemprop="contentUrl">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</sly>
+
+
+<style>
+    .cmp-navigation__item-link:hover {
+      background-color: red;
+    }
+</style>

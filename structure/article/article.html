@@ -1,0 +1,27 @@
+<sly data-sly-use.article="com.mysite.core.models.ArticleModel" data-sly-test.empty="${!article.fileReference}"
+     data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+     data-sly-call="${template.placeholder @ isEmpty=empty}"/>
+
+<div class="article">
+    <!-- Display Title -->
+    <h2 data-sly-test="${article.title}">${article.title}</h2>
+
+    <!-- Display Image (required) -->
+    <img src="${article.imagePath}" alt="${article.imageAltText}">
+
+    <!-- Display Description (required) -->
+    <p data-sly-test="${article.description}">${article.description}</p>
+    <p data-sly-test="${!article.description}">Default Description Goes Here</p>
+
+    <!-- Display Tags -->
+    <div class="article-tags">
+        <span>Article Tags: </span>
+        <sly data-sly-list.articleTag="${article.articleTags}">
+            <span>${articleTag}</span>
+        </sly>
+    </div>
+
+
+
+</div>
+

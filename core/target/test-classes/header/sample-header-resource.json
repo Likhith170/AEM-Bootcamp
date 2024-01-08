@@ -1,0 +1,19 @@
+{
+    "jcr:primaryType": "nt:unstructured",
+    "fileReference": "/content/dam/we-retail-instore-logo.png",
+    "altText": "sample text",
+    "sling:resourceType": "mysite/components/structure/header",
+    "logoLink": "/content/mysite/index",
+    "navigations": {
+    "jcr:primaryType": "nt:unstructured",
+    "item0": {
+    "jcr:primaryType": "nt:unstructured",
+    "rootPath": "/content/mysite/en/home-page"
+    },
+    "item1": {
+    "jcr:primaryType": "nt:unstructured",
+    "rootPath": "/content/mysite/en/home-page1"
+    }
+    }
+   }
+   

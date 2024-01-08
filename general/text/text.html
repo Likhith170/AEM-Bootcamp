@@ -1,0 +1,8 @@
+<sly data-sly-use.text="com.mysite.core.models.TextModel" data-sly-test.empty="${!footer.fileReference}"
+     data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+     data-sly-call="${template.placeholder @ isEmpty=empty}"/>
+
+
+<sly data-sly-use.model="com.mysite.core.models.TextModel">
+    ${model.text  @ context='html'}
+</sly>

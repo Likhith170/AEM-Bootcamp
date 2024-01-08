@@ -1,0 +1,28 @@
+
+
+<h1>Breadcrumb</h1>
+
+<!-- /apps/your-project/components/breadcrumb/breadcrumb.html -->
+<!--/* <div data-sly-use.breadcrumbModel="com.mysite.core.models.BreadcrumbModel"> */-->
+    <div class="aem-breadcrumb" style="text-decoration: none; font-weight: bold; color: black;" data-sly-resource="${'breadcrumb' @resourceType='foundation/components/breadcrumb'}"></div>
+
+<!--/*     <nav class="breadcrumb"> */-->
+<!--/*         <ul> */-->
+<!--/*             <li><a href="${breadcrumbModel.homepageUrl}">Homepage</a></li> */-->
+<!--/*             <sly data-sly-list="${breadcrumbModel.items}" var="item"> */-->
+<!--/*                 <li data-sly-test="${!item.hideInNav}"> */-->
+<!--/*                     <a data-sly-attribute.href="${item.url}" href="${item.url}">${item.title}</a> */-->
+<!--/*                 </li> */-->
+<!--/*             </sly> */-->
+<!--/*         </ul> */-->
+<!--/*     </nav> */-->
+<!--/* </div> */-->
+<style>
+    .aem-breadcrumb {
+        background-color: #f0f0f0;
+        padding: 10px;
+        text-decoration: none;
+    font-weight: bold;
+    color: black;
+    }
+</style>

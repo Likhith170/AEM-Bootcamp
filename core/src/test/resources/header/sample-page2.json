@@ -1,0 +1,11 @@
+{
+    "jcr:primaryType": "cq:Page",
+    "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:title": "Sample Page",
+    "cq:template": "/apps/mysite/templates/homepage",
+    "sling:resourceType": "mysite/components/structure/homepage"
+    }
+   }
+
+   
